@@ -11,7 +11,7 @@ public class RedAsteroid extends Asteroid {
         super(x, y);
         Random rnd = new Random();
         super.getCharacter().setRotate(rnd.nextInt(360));
-        int accelerationAmount = 50 + rnd.nextInt(10);
+        int accelerationAmount = 40 + rnd.nextInt(10);
         for (int i = 0; i < accelerationAmount; i++) {
             super.accelerate();
         }
